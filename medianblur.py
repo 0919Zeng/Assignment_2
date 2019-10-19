@@ -31,7 +31,6 @@ def medianBlur(img, kernel, padding_way='ZERO'):
                 matrix[padding:-padding, r] = img[:, 0]
                 matrix[padding:-padding, -(1 + r)] = img[:, -1]
         else:
-            print('padding_way error need ZERO or REPLICA')
             return None
 
         # 创建输出矩阵
